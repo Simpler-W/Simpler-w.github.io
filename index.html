@@ -28,7 +28,73 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">Categories</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Simpler Learning</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/10/HexoCommands/">Hexo commonly used commands and their meanings</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-10</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-10</span></span></div></header><div class="post-body"><div class="post-excerpt">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">Categories</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Simpler Learning</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/10/UML-class-diagrem/">UML class diagram</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-10</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-10</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="引子"   >
+          <a href="#引子" class="heading-link"><i class="fas fa-link"></i></a>引子</h3>
+      <p>&emsp;&emsp;统一建模语言（Unified Modeling Language，UML）是用来设计软件蓝图的可视化建模语言，特点是简单、统一、图形化、能表达软件设计中的动态与静态信息。</p>
+<p>&emsp;&emsp;UML为软件开发的所有阶段提供模型化和可视化支持，而且融入了软件工程领域的新思想、新方法和新技术，使软件设计人员沟通更简明，进一步缩短了设计时间，减少开发成本。它的应用领域很宽，不仅适合于一般系统的开发，而且适合于并行与分布式系统的建模。</p>
+<p>&emsp;&emsp;UML 从目标系统的不同角度出发，定义了用例图、类图、对象图、状态图、活动图、时序图、协作图、构件图、部署图等 9 种图。</p>
+
+        <h3 id="类、接口和类图"   >
+          <a href="#类、接口和类图" class="heading-link"><i class="fas fa-link"></i></a>类、接口和类图</h3>
+      
+        <h5 id="类"   >
+          <a href="#类" class="heading-link"><i class="fas fa-link"></i></a>类</h5>
+      <p>&emsp;&emsp;类（Class）是指具有相同属性、方法和关系的对象的抽象，它封装了数据和行为，是面向对象程序设计（OOP）的基础，具有封装性、继承性和多态性等三大特性。在 UML 中，类使用包含类名、属性和操作且带有分隔线的矩形来表示。</p>
+<ol>
+<li><p>类名（Name）是一个字符串，例如，Student。</p>
+</li>
+<li></li>
+<li><p>属性（Attribute）是指类的特性，即类的成员变量。UML 按以下格式表示：</p>
+ <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[可见性]属性名:类型[&#x3D;默认值]</span><br></pre></td></tr></table></div></figure>
+<p> 例如：-name:string=simpler, 表示私有的字符串类型name，且默认值为simpler。<br> <strong>“可见性”表示该属性对类外的元素是否可见，包括公有（Public）、私有（Private）、受保护（Protected）和朋友（Friendly）4 种，在类图中分别用符号+、-、#、~表示。</strong></p>
+</li>
+<li><p>操作（Operations）是类的任意一个实例对象都可以使用的行为，是类的成员方法。UML 按以下格式表示：</p>
+ <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[可见性]名称(参数列表)[:返回类型]</span><br></pre></td></tr></table></div></figure>
+<p> 例如：+display(int id):void，表示公有的display返回需要int类型的id，且无返回结果。</p>
+</li>
+</ol>
+<p>&emsp;&emsp;student类的UML表示如下<br>&emsp;&emsp;<img src="/images/uml/class-student.PNG"></p>
+<hr>
+
+        <h5 id="接口"   >
+          <a href="#接口" class="heading-link"><i class="fas fa-link"></i></a>接口</h5>
+      <p>&emsp;&emsp;接口（Interface）是一种特殊的类，它具有类的结构但不可被实例化，只可以被子类实现。它包含抽象操作，但不包含属性。它描述了类或组件对外可见的动作。在 UML 中，接口使用一个带有名称的小圆圈来进行表示。<br>&emsp;&emsp;Graph接口的UML表示如下<br>&emsp;&emsp;<img src="/images/uml/interface-graph.PNG"></p>
+<hr>
+
+        <h5 id="类图"   >
+          <a href="#类图" class="heading-link"><i class="fas fa-link"></i></a>类图</h5>
+      <p>&emsp;&emsp;类图（ClassDiagram）是用来显示系统中的类、接口、协作以及它们之间的静态结构和关系的一种静态模型。它主要用于描述软件系统的结构化设计，帮助人们简化对软件系统的理解，它是系统分析与设计阶段的重要产物，也是系统编码与测试的重要模型依据。<br>&emsp;&emsp;类图中的类可以通过某种编程 语言直接实现。类图在软件系统开发的整个生命周期都是有效的，它是面向对象系统的建模中最常见的图。如下 所示是“计算长方形和圆形的周长与面积”的类图，图形接口有计算面积和周长的抽象方法，长方形和圆形实现这两个方法供访问类调用。<br><img src="/images/uml/class-graph.PNG"></p>
+<hr>
+
+        <h3 id="类之间的关系"   >
+          <a href="#类之间的关系" class="heading-link"><i class="fas fa-link"></i></a>类之间的关系</h3>
+      <p>&emsp;&emsp;在软件系统中，类不是孤立存在的，类与类之间存在各种关系。根据类与类之间的耦合度从弱到强排列，UML 中的类图有以下几种关系：依赖关系、关联关系、聚合关系、组合关系、泛化关系和实现关系。其中泛化和实现的耦合度相等，它们是最强的。</p>
+
+        <h5 id="1-依赖关系"   >
+          <a href="#1-依赖关系" class="heading-link"><i class="fas fa-link"></i></a>1. 依赖关系</h5>
+      <p>&emsp;&emsp;依赖（Dependency）关系是一种使用关系，它是对象之间耦合度最弱的一种关联方式，是临时性的关联。在代码中，某个类的方法通过局部变量、方法的参数或者对静态方法的调用来访问另一个类（被依赖类）中的某些方法来完成一些职责。<br>&emsp;&emsp;在 UML 类图中，依赖关系使用带箭头的虚线来表示，箭头从使用类指向被依赖的类。<br><img src="/images/uml/dependency.PNG"></p>
+
+        <h5 id="2-关联关系"   >
+          <a href="#2-关联关系" class="heading-link"><i class="fas fa-link"></i></a>2. 关联关系</h5>
+      <p>&emsp;&emsp;关联（Association）关系是对象之间的一种引用关系，用于表示一类对象与另一类对象之间的联系，如老师和学生、师傅和徒弟、丈夫和妻子等。关联关系是类与类之间最常用的一种关系，分为一般关联关系、聚合关系和组合关系。关联可以是双向的，也可以是单向的。在 UML 类图中，双向的关联可以用带两个箭头或者没有箭头的实线来表示，单向的关联用带一个箭头的实线来表示，箭头从使用类指向被关联的类。也可以在关联线的两端标注角色名，代表两种不同的角色。<br>&emsp;&emsp;在代码中通常将一个类的对象作为另一个类的成员变量来实现关联关系。<br><img src="/images/uml/association.PNG"></p>
+
+        <h5 id="3-聚合关系"   >
+          <a href="#3-聚合关系" class="heading-link"><i class="fas fa-link"></i></a>3. 聚合关系</h5>
+      <p>&emsp;&emsp;聚合（Aggregation）关系是关联关系的一种，是强关联关系，是整体和部分之间的关系，是 has-a 的关系。聚合关系也是通过成员对象来实现的，其中成员对象是整体对象的一部分，但是成员对象可以脱离整体对象而独立存在。例如，学校与老师的关系，学校包含老师，但如果学校停办了，老师依然存在。<br>&emsp;&emsp;在 UML 类图中，聚合关系可以用带空心菱形的实线来表示，菱形指向整体。<br><img src="/images/uml/aggregation.PNG"></p>
+
+        <h5 id="4-组合关系"   >
+          <a href="#4-组合关系" class="heading-link"><i class="fas fa-link"></i></a>4.组合关系</h5>
+      <p>&emsp;&emsp;组合（Composition）关系也是关联关系的一种，也表示类之间的整体与部分的关系，但它是一种更强烈的聚合关系，是 cxmtains-a 关系。在组合关系中，整体对象可以控制部分对象的生命周期，一旦整体对象不存在，部分对象也将不存在，部分对象不能脱离整体对象而存在。例如，头和嘴的关系，没有了头，嘴也就不存在了。<br>&emsp;&emsp;在 UML 类图中，组合关系用带实心菱形的实线来表示，菱形指向整体。<br><img src="/images/uml/composition.PNG"></p>
+
+        <h5 id="5-泛化关系"   >
+          <a href="#5-泛化关系" class="heading-link"><i class="fas fa-link"></i></a>5.泛化关系</h5>
+      <p>&emsp;&emsp;泛化（Generalization）关系是对象之间耦合度最大的一种关系，表示一般与特殊的关系，是父类与子类之间的关系，是一种继承关系，是 is-a 的关系。<br>&emsp;&emsp;在 UML 类图中，泛化关系用带空心三角箭头的实线来表示，箭头从子类指向父类。在代码实现时，使用面向对象的继承机制来实现泛化关系。<br><img src="/images/uml/generalization.PNG"></p>
+
+        <h5 id="6-实现关系"   >
+          <a href="#6-实现关系" class="heading-link"><i class="fas fa-link"></i></a>6.实现关系</h5>
+      <p>&emsp;&emsp;实现（Realization）关系是接口与实现类之间的关系。在这种关系中，类实现了接口，类中的操作实现了接口中所声明的所有的抽象操作。<br>&emsp;&emsp;在 UML 类图中，实现关系使用带空心三角箭头的虚线来表示，箭头从实现类指向接口。<br><img src="/images/uml/realization.PNG"></p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/10/HexoCommands/">Hexo commonly used commands and their meanings</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-10</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-10</span></span></div></header><div class="post-body"><div class="post-excerpt">
         <h3 id="install-update-and-init"   >
           <a href="#install-update-and-init" class="heading-link"><i class="fas fa-link"></i></a>install, update and init</h3>
       <pre><code><figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">npm update hexo -g</span><br><span class="line">hexo init</span><br></pre></td></tr></table></div></figure></code></pre>
@@ -44,7 +110,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
         <h3 id="This-doc-refer-link"   >
           <a href="#This-doc-refer-link" class="heading-link"><i class="fas fa-link"></i></a>This doc refer link:</h3>
       <pre><code>https://segmentfault.com/a/1190000002632530</code></pre>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/09/English-1/">English Words</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-09</span></span></div></header><div class="post-body"><div class="post-excerpt">
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/09/English-1/">English Words</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-10</span></span></div></header><div class="post-body"><div class="post-excerpt">
         <h3 id="abandon"   >
           <a href="#abandon" class="heading-link"><i class="fas fa-link"></i></a>abandon</h3>
       <p><strong>[verb] UK  /əˈbæn.dən/ US  /əˈbæn.dən/</strong></p>
@@ -138,7 +204,104 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
 <li><p><strong>the act of throwing a ball too far</strong></p>
 </li>
 </ul>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/08/HexoBuild/">How to build the blog site by Github and Hexo</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-10</span></span></div></header><div class="post-body"><div class="post-excerpt">
+<hr>
+
+        <h4 id="revolution"   >
+          <a href="#revolution" class="heading-link"><i class="fas fa-link"></i></a>revolution</h4>
+      <p><strong>[noun] UK  /ˌrev.əˈluː.ʃən/ US  /ˌrev.əˈluː.ʃən/</strong></p>
+<ul>
+<li><p><strong>a change in the way a contry is governed, usually to a different political system and ofern using violence or war</strong><br>To start a revolution for the free mind.</p>
+</li>
+<li><p><strong>a very important change in the way that people do things</strong><br>a infomation technological revolution.</p>
+</li>
+<li><p><strong>a circualr movement</strong><br>The revolution of the earth around the sun.</p>
+</li>
+</ul>
+<hr>
+
+        <h3 id="govern"   >
+          <a href="#govern" class="heading-link"><i class="fas fa-link"></i></a>govern</h3>
+      <p><strong>[verb] UK  /ˈɡʌv.ən/ US  /ˈɡʌv.ɚn/</strong></p>
+<ul>
+<li><p><strong>a control and direct the public business of a country, city, group of people, etc.</strong><br>The contry has been governed by people.</p>
+</li>
+<li><p><strong>to have a controlling influence on something</strong><br>Prices of goods are governed by needs of people.</p>
+</li>
+</ul>
+<hr>
+
+        <h3 id="political"   >
+          <a href="#political" class="heading-link"><i class="fas fa-link"></i></a>political</h3>
+      <p><strong>[adjective] UK  /pəˈlɪt.ɪ.kəl/ US  /pəˈlɪt̬.ə.kəl/</strong></p>
+<ul>
+<li><strong>relating to politics</strong><br>political leaders</li>
+</ul>
+<hr>
+
+        <h3 id="circualr"   >
+          <a href="#circualr" class="heading-link"><i class="fas fa-link"></i></a>circualr</h3>
+      <p><strong>[adjective] UK  /ˈsɜː.kjə.lər/ US  /ˈsɝː.kjə.lɚ/</strong></p>
+<ul>
+<li><strong>shaped like a circle</strong><br>a circualr table</li>
+</ul>
+<p><strong>[noun] UK  /ˈsɜː.kjə.lər/ US  /ˈsɝː.kjə.lɚ/</strong></p>
+<ul>
+<li><strong>a letter or notice sent to a large number of people</strong><br>Circulars and other junk mail go straight in the bin.</li>
+</ul>
+<hr>
+
+        <h3 id="bin"   >
+          <a href="#bin" class="heading-link"><i class="fas fa-link"></i></a>bin</h3>
+      <p><strong>[noun] UK  /bɪn/ US  /bɪn/</strong></p>
+<ul>
+<li><strong>a container for waste</strong><br>Put the empty box in the rubbish bin.</li>
+</ul>
+<p><strong>[verb] UK  /bɪn/ US  /bɪn/</strong></p>
+<ul>
+<li><strong>a large container used for storing things</strong><br>a bread bin.</li>
+</ul>
+<hr>
+
+        <h3 id="direct"   >
+          <a href="#direct" class="heading-link"><i class="fas fa-link"></i></a>direct</h3>
+      <p><strong>[adjective] UK  /daɪˈrekt/ /dɪˈrekt/ US  /daɪˈrekt/ /dɪˈrekt/</strong></p>
+<ul>
+<li><p><strong>going in a straight line towards somewhere or someone witout stopping or changing direction</strong><br>Is there a driect train to Beijing?</p>
+</li>
+<li><p><strong>complete</strong><br>a direct comparison.</p>
+</li>
+<li><p><strong>someone who is says what they think in a very honest way witout worrying about other peoples’s opinions</strong><br>I like her direct style.</p>
+</li>
+</ul>
+<p><strong>[verb] UK  /daɪˈrekt/ /dɪˈrekt/ US  /daɪˈrekt/ /dɪˈrekt/</strong></p>
+<ul>
+<li><p><strong>to control or be incharge of an activity, origanization, etc.</strong><br>She directs a big company.</p>
+</li>
+<li><p><strong>to be in charge of film or play and tell the actors how play their parts.</strong><br>She wanted to give up acting and start directing (her own films).</p>
+</li>
+<li><p><strong>to tell someonw how to get somewhere</strong><br>Could you direct me to the airport?</p>
+</li>
+<li><p><strong>to order someone, especially officaially</strong><br>The leader directed employees to remain silent.</p>
+</li>
+</ul>
+<hr>
+
+        <h3 id="towards"   >
+          <a href="#towards" class="heading-link"><i class="fas fa-link"></i></a>towards</h3>
+      <p><strong>[preposition] UK  /təˈwɔːdz/ /twɔːdz/ US  /tɔːrdz/ /twɔːrdz/</strong></p>
+<ul>
+<li><p><strong>in the direction of, or closer to someone or something</strong><br>She stand up and walked towards him.</p>
+</li>
+<li><p><strong>in relation to someone or something</strong><br>They have always been very friendly towards me.</p>
+</li>
+<li><p><strong>near to, just before, or around a time or place</strong><br>Our seats are towards the wall.</p>
+</li>
+</ul>
+<hr>
+
+        <h3 id="charge"   >
+          <a href="#charge" class="heading-link"><i class="fas fa-link"></i></a>charge</h3>
+      </div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/01/08/HexoBuild/">How to build the blog site by Github and Hexo</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-08</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-10</span></span></div></header><div class="post-body"><div class="post-excerpt">
         <h3 id="Download-and-install-the-Git"   >
           <a href="#Download-and-install-the-Git" class="heading-link"><i class="fas fa-link"></i></a>Download and install the Git</h3>
       <p>Choose the “Use Git from the Windows Command Prompt” in “Adjusting your PATH environment’ page.</p>
@@ -194,7 +357,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
         <h3 id="This-doc-refer-link"   >
           <a href="#This-doc-refer-link" class="heading-link"><i class="fas fa-link"></i></a>This doc refer link:</h3>
       <pre><code>https://www.jianshu.com/p/189fd945f38f</code></pre>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/cyberpunk.svg" alt="avatar"></div></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/Simpler-W" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="undefined"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">Categories</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Simpler W</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/cyberpunk.svg" alt="avatar"></div></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/Simpler-W" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="undefined"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">Categories</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Simpler W</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
   var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload"],"history":true,"scrollTo":false,"scrollRestoration":false,"cacheBust":false,"debug":false,"currentUrlFullReload":false,"timeout":0});
   // 加载进度条的计时器
   var loadingTimer = null;
