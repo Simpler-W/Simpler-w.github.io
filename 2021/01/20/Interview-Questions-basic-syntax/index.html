@@ -1,0 +1,309 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.1" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.1" type="image/png" sizes="32x32"><meta name="description" content="1. 字符串中string str &#x3D; null和string str &#x3D; “”和string str &#x3D; string.Empty的区别       string.Empty相当于””,string.Empty是一个静态只读的字段。string str&#x3D;””,初始化对象，并分配一个空字符串的内存空间,string str&#x3D;null,初始化对象，不会分配内存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simpler Learning">
+<meta property="og:url" content="https://github.com/Simpler-W/2021/01/20/Interview-Questions-basic-syntax/index.html">
+<meta property="og:site_name" content="Simpler Learning">
+<meta property="og:description" content="1. 字符串中string str &#x3D; null和string str &#x3D; “”和string str &#x3D; string.Empty的区别       string.Empty相当于””,string.Empty是一个静态只读的字段。string str&#x3D;””,初始化对象，并分配一个空字符串的内存空间,string str&#x3D;null,初始化对象，不会分配内存">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-20T08:58:47.879Z">
+<meta property="article:modified_time" content="2021-01-20T05:33:45.420Z">
+<meta property="article:author" content="Simpler W">
+<meta name="twitter:card" content="summary"><title>[ Untitled ] | Simpler Learning</title><link ref="canonical" href="https://github.com/Simpler-W/2021/01/20/Interview-Questions-basic-syntax/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: {"avoidBanner":false},
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">Categories</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Simpler Learning</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">[ Untitled ]</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-20</span></span></div></header><div class="post-body">
+        <h4 id="1-字符串中string-str-null和string-str-“”和string-str-string-Empty的区别"   >
+          <a href="#1-字符串中string-str-null和string-str-“”和string-str-string-Empty的区别" class="heading-link"><i class="fas fa-link"></i></a>1. 字符串中string str = null和string str = “”和string str = string.Empty的区别</h4>
+      <p>string.Empty相当于””,string.Empty是一个静态只读的字段。<br>string str=””,初始化对象，并分配一个空字符串的内存空间,string str=null,初始化对象，不会分配内存空间</p>
+
+        <h4 id="2-byte-b-‘a’-byte-c-1-byte-d-‘ab’-byte-e-‘啊’-byte-g-256-这些变量有些是错误的，错在哪里"   >
+          <a href="#2-byte-b-‘a’-byte-c-1-byte-d-‘ab’-byte-e-‘啊’-byte-g-256-这些变量有些是错误的，错在哪里" class="heading-link"><i class="fas fa-link"></i></a>2. byte b = ‘a’; byte c = 1; byte d = ‘ab’; byte e = ‘啊’; byte g = 256; 这些变量有些是错误的，错在哪里?</h4>
+      <p>1 byte(字节)=8 bit(位)，1个汉字=2个byte，1个英文=1个byte<br>因此byte b, byte c是对的，符合数据类型存储的大小<br>byte d, byte e是错的, 超出了byte类型存储数据大小的范围<br>byte g是错的，java byte取值范围是-128<del>127, 而C#里byte是0</del>255</p>
+
+        <h4 id="3-string和StringBuilder的区别"   >
+          <a href="#3-string和StringBuilder的区别" class="heading-link"><i class="fas fa-link"></i></a>3.string和StringBuilder的区别</h4>
+      <p>两者都是引用类型，新建对象时都分配在堆内存上<br>StringBuilder默认容量是16，可以扩充它所封装的字符串中字符的数量. 每个StringBuffer对象都有一定的缓冲区容量，当字符串大小没有超过容量时，不会分配新的容量，当字符串大小超过容量时，会自动增加容量。<br>对于简单的字符串连接操作，在性能上stringbuilder不一定总是优于strin因为stringbulider对象的创建也消耗大量的性能，在字符串连接比较少的情况下，过度滥用stringbuilder会导致性能的浪费而非节约，只有大量无法预知次数的字符串操作才考虑stringbuilder的使用</p>
+
+        <h4 id="4-什么是扩展方法？"   >
+          <a href="#4-什么是扩展方法？" class="heading-link"><i class="fas fa-link"></i></a>4.什么是扩展方法？</h4>
+      <p>扩展方法使你能够向现有类型“添加”方法，而无需创建新的派生类型、重新编译或以其他方式修改原始类型。<br>实现条件：</p>
+<ul>
+<li><ol>
+<li>在非嵌套的、非泛型静态类内部定义为静态方法 </li>
+</ol>
+</li>
+<li><ol start="2">
+<li>第一个参数指定方法操作的类型，参数前面是this修饰符 </li>
+</ol>
+</li>
+<li><ol start="3">
+<li>仅当使用 using 指令将命名空间显式导入到源代码中之后，扩展方法才位于范围中 </li>
+</ol>
+</li>
+<li><ol start="4">
+<li>通过实例方法语法进行调用</li>
+</ol>
+</li>
+</ul>
+<p>编译器生成的中间语言 (IL) 会将扩展方法的代码转换为对静态方法的调用。 并未真正违反封装原则<br>注意： 1. 如果扩展方法与该类型中定义的方法具有相同的签名，则扩展方法永远不会被调用 2. 在命名空间级别将扩展方法置于范围中。<br>建议： 对于原始源不受控制、派生对象不合适或不可用，或者不应在功能适用范围之外公开功能的情况，扩展方法是一个不错的选择。</p>
+
+        <h4 id="5-byte-a-255-a-5-a的值是多少？"   >
+          <a href="#5-byte-a-255-a-5-a的值是多少？" class="heading-link"><i class="fas fa-link"></i></a>5.byte a =255;a+=5;a的值是多少？</h4>
+      <p>byte的值范围是0~255，最大值位的表示是1111 1111，<br>256的位表示是 0001 0000 0100，而超出byte表示范围后，会只计算原始的后8位，因此a=4</p>
+
+        <h4 id="6-什么是装箱和拆箱？"   >
+          <a href="#6-什么是装箱和拆箱？" class="heading-link"><i class="fas fa-link"></i></a>6.什么是装箱和拆箱？</h4>
+      <p>装箱就是隐式地将一个值类型转换成引用类型，例如把int类型的值赋值给object对象；<br>拆箱就是将引用类型转换成值类型，例如把object类型的对象转为int类型的值(一般是强制转化)</p>
+
+        <h4 id="7-值类型和引用类型的区别"   >
+          <a href="#7-值类型和引用类型的区别" class="heading-link"><i class="fas fa-link"></i></a>7.值类型和引用类型的区别</h4>
+      <p>值类型变量是直接包含值, 值类型的赋值是包含值的复制，默认值是0<br>引用类型变量是包含指向对象的引用，引用类型的赋值只复制对象的引用，默认值是null<br>值类型有整形、浮点型、bool、枚举。引用类型有class、delegate、Object、string，record<br>值类型存储在栈中，引用类型存储在堆中</p>
+
+        <h4 id="8-new关键字的作用"   >
+          <a href="#8-new关键字的作用" class="heading-link"><i class="fas fa-link"></i></a>8.new关键字的作用</h4>
+      <p>运算符：创建对象实例<br>修饰符：在派生类定义一个重名的方法，隐藏掉基类方法<br>约束：泛型约束定义，约束可使用的泛型类型,传入泛型的类型必须有一个公共的无参构造函数 (注意：当与其他约束一起使用时，new() 约束必须最后指定)</p>
+
+        <h4 id="9-int-和int有什么区别"   >
+          <a href="#9-int-和int有什么区别" class="heading-link"><i class="fas fa-link"></i></a>9. int?和int有什么区别</h4>
+      <p>int？为可空类型，初始化值可以是null<br>int?通过把int类型装箱为引用类型System.Nullable<T>实现</p>
+
+        <h4 id="10-C-中的委托是什么？"   >
+          <a href="#10-C-中的委托是什么？" class="heading-link"><i class="fas fa-link"></i></a>10. C#中的委托是什么？</h4>
+      <p>委托是一种引用类型，表示对具有特定参数列表和返回类型的方法的引用。<br>实例化委托时，可以将其实例与任何具有兼容签名和返回类型的方法相关联,通过委托实例调用方法<br>委托用于将方法作为参数传递给其他方法,事件处理程序就是通过委托调用的方法</p>
+
+        <h4 id="11-用最有效的方法算出2乘以8等于几？"   >
+          <a href="#11-用最有效的方法算出2乘以8等于几？" class="heading-link"><i class="fas fa-link"></i></a>11.用最有效的方法算出2乘以8等于几？</h4>
+      <p>使用的是位运算 逻辑左位移&lt;&lt;。<br>2*8 = 2^4, 2&lt;&lt;3相当于0000 0000 0000 0010 （2的16位int二进制）左移三位 0000 0000 0001 0000（16的二进制）</p>
+
+        <h4 id="12-const和readonly有什么区别？"   >
+          <a href="#12-const和readonly有什么区别？" class="heading-link"><i class="fas fa-link"></i></a>12.const和readonly有什么区别？</h4>
+      <p>都可以标识一个常量。主要有以下区别</p>
+<ul>
+<li><ol>
+<li>初始化位置不同。const必须在声明的同时赋值；readonly即可以在声明处赋值，也可以在静态构造方法里赋值。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>修饰对象不同。const即可以修饰类的字段，也可以修饰局部变量；readonly只能修饰类的字段</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>const是编译时常量，在编译时确定该值；readonly是运行时常量，在运行时确定该值。</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>const默认是静态的；而readonly如果设置成静态需要显示声明static</li>
+</ol>
+</li>
+</ul>
+
+        <h4 id="13-写一个方法判断整数number是否是2的N次方"   >
+          <a href="#13-写一个方法判断整数number是否是2的N次方" class="heading-link"><i class="fas fa-link"></i></a>13.写一个方法判断整数number是否是2的N次方</h4>
+      <p>取模运算：用number%2==0可以判断<br>位运算：使用位运算逻辑与，两个位上的都为1才是1，其余都是0，判断逻辑结果是否等于0。计算指定数字与比改数字小一的数的逻辑与结果，如指定5 (0101) &amp; 4 (0100) = 4 (0100)结果不等于0， 则5不是2的N次方</p>
+
+        <h4 id="14-CTS、CLS、CLR分别作何解释"   >
+          <a href="#14-CTS、CLS、CLR分别作何解释" class="heading-link"><i class="fas fa-link"></i></a>14.CTS、CLS、CLR分别作何解释</h4>
+      <p>CTS：Common Type System 通用类型系统。Int32、Int16→int、String→string、Boolean→bool。<br>CLS：Common Language Specification 通用语言规范。<br>CLR：Common Language Runtime 公共语言运行时，就是GC、JIT等这些。有不同的CLR，比如服务器CLR、Linux CLR（Mono）、Silverlight CLR(CoreCLR)。相当于一个发动机，负责执行IL。</p>
+
+        <h4 id="15-分析下面代码，a、b的值是多少？"   >
+          <a href="#15-分析下面代码，a、b的值是多少？" class="heading-link"><i class="fas fa-link"></i></a>15.分析下面代码，a、b的值是多少？</h4>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string strTmp &#x3D; &quot;a1某某某&quot;;</span><br><span class="line">int a &#x3D; System.Text.Encoding.Default.GetBytes(strTmp).Length;</span><br><span class="line">int b &#x3D; strTmp.Length;</span><br></pre></td></tr></table></div></figure>
+<p>a表示字节长度，一个汉字两个字节，因此a=8。b表示字符长度，因此b=5。</p>
+
+        <h4 id="16-Strings-new-String-“xyz”-创建了几个String-Object"   >
+          <a href="#16-Strings-new-String-“xyz”-创建了几个String-Object" class="heading-link"><i class="fas fa-link"></i></a>16.Strings = new String(“xyz”);创建了几个String Object?</h4>
+      <p>两个对象，一个是“xyz”,一个是指向“xyz”的引用对象s。</p>
+
+        <h4 id="17-静态成员和非静态成员的区别"   >
+          <a href="#17-静态成员和非静态成员的区别" class="heading-link"><i class="fas fa-link"></i></a>17.静态成员和非静态成员的区别</h4>
+      <ul>
+<li><ol>
+<li>静态成员用statis修饰符声明，在类被实例化时创建，通过类进行访问</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>不带statis的变量时非静态变量，在对象被实例化时创建，通过对象进行访问，</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>静态方法里不能使用非静态成员，非静态方法可以使用静态成员</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>静态成员属于类，而不属于对象</li>
+</ol>
+</li>
+</ul>
+
+        <h4 id="18-c-可否对内存直接操作"   >
+          <a href="#18-c-可否对内存直接操作" class="heading-link"><i class="fas fa-link"></i></a>18.c#可否对内存直接操作</h4>
+      <p>C#在unsafe 模式下可以使用指针对内存进行操作, 但在托管模式下不可以使用指针，C#NET默认不运行带指针的. 需要在开发环境中设置</p>
+
+        <h4 id="19-short-s1-1-s1-s1-1-有什么错-short-s1-1-s1-1-有什么错"   >
+          <a href="#19-short-s1-1-s1-s1-1-有什么错-short-s1-1-s1-1-有什么错" class="heading-link"><i class="fas fa-link"></i></a>19.short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?</h4>
+      <p>s1+1不能显式转换成short类型，可以修改为s1 =(short)(s1 + 1)。<br>short s1 = 1; s1 += 1正确</p>
+
+        <h4 id="20-什么是强类型，什么是弱类型？哪种更好些？为什么"   >
+          <a href="#20-什么是强类型，什么是弱类型？哪种更好些？为什么" class="heading-link"><i class="fas fa-link"></i></a>20.什么是强类型，什么是弱类型？哪种更好些？为什么?</h4>
+      <p>强类型是在编译的时候就确定类型的数据，在执行时类型不能更改，而弱类型在执行的时候才会确定类型。<br>二者各有好处，强类型安全，因为它事先已经确定好了，而且效率高。一般用于编译型编程语言，如c++,java,c#,pascal等。弱类型相比而言不安全，在运行的时候容易出现错误，但它灵活，多用于解释型编程语言，如javascript,vb,php等<br>C#中可以用var来声明弱类型的变量</p>
+
+        <h4 id="21-using关键字的作用"   >
+          <a href="#21-using关键字的作用" class="heading-link"><i class="fas fa-link"></i></a>21.using关键字的作用</h4>
+      <ul>
+<li><ol>
+<li>引用命名空间</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>释放资源，实现了IDisposiable的类在using中创建，using结束后会自定调用该对象的Dispose方法，释放资源。</li>
+</ol>
+</li>
+</ul>
+
+        <h4 id="22-ref和out有什么区别"   >
+          <a href="#22-ref和out有什么区别" class="heading-link"><i class="fas fa-link"></i></a>22.ref和out有什么区别</h4>
+      <ul>
+<li><ol>
+<li>都是把修饰参数按引用类型进行传递</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>ref参数必须初始化。out不需要初始化</li>
+</ol>
+</li>
+</ul>
+
+        <h4 id="23-a-Equals-b-和a-b一样吗？"   >
+          <a href="#23-a-Equals-b-和a-b一样吗？" class="heading-link"><i class="fas fa-link"></i></a>23.a.Equals(b)和a==b一样吗？</h4>
+      <p>a==b仅仅表示a和b值相等，a.Equals(b)表示a与b引用一致</p>
+
+        <h4 id="24-Math-Round-11-5-等於多少-Math-Round-11-5-等於多少"   >
+          <a href="#24-Math-Round-11-5-等於多少-Math-Round-11-5-等於多少" class="heading-link"><i class="fas fa-link"></i></a>24.Math.Round(11.5)等於多少? Math.Round(-11.5)等於多少?</h4>
+      <p>Math.Round 将值舍入到最接近的整数或指定的小数位数。<br>Math.Round(11.5)=12 Math.Round(-11.5)=-12</p>
+
+        <h4 id="25-amp-和-amp-amp-的区别"   >
+          <a href="#25-amp-和-amp-amp-的区别" class="heading-link"><i class="fas fa-link"></i></a>25.&amp;和&amp;&amp;的区别</h4>
+      <p>&amp;和&amp;&amp;都可作逻辑与的运算符，表示逻辑与（and），当运算符两边的表达式的结果都为true时，其结果才为true，否则，只要有一方为false，则结果为false。<br>条件逻辑与&amp;&amp;具有短路的功能，即如果第一个表达式为false，则不再计算第二个表达式<br>逻辑与&amp; 可以用作位运算。</p>
+
+        <h4 id="26-i-和-i有什么区别？"   >
+          <a href="#26-i-和-i有什么区别？" class="heading-link"><i class="fas fa-link"></i></a>26.i++和++i有什么区别？</h4>
+      <p>i++是先赋值，然后再自增；++i是先自增，后赋值。</p>
+
+        <h4 id="27-as和is的区别"   >
+          <a href="#27-as和is的区别" class="heading-link"><i class="fas fa-link"></i></a>27.as和is的区别</h4>
+      <p>as会执行类型转换，并在转换的同时判断兼容性，如果无法进行转换，返回位null<br>is只是做类型兼容性判断，并不执行真正的类型转换，返回true或false，对象为null也会返回false。</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2021/01/17/English-2/"><span class="paginator-prev__text">English Words</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%ADstring-str-null%E5%92%8Cstring-str-%E2%80%9C%E2%80%9D%E5%92%8Cstring-str-string-Empty%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">
+          1. 字符串中string str &#x3D; null和string str &#x3D; “”和string str &#x3D; string.Empty的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-byte-b-%E2%80%98a%E2%80%99-byte-c-1-byte-d-%E2%80%98ab%E2%80%99-byte-e-%E2%80%98%E5%95%8A%E2%80%99-byte-g-256-%E8%BF%99%E4%BA%9B%E5%8F%98%E9%87%8F%E6%9C%89%E4%BA%9B%E6%98%AF%E9%94%99%E8%AF%AF%E7%9A%84%EF%BC%8C%E9%94%99%E5%9C%A8%E5%93%AA%E9%87%8C"><span class="toc-number">2.</span> <span class="toc-text">
+          2. byte b &#x3D; ‘a’; byte c &#x3D; 1; byte d &#x3D; ‘ab’; byte e &#x3D; ‘啊’; byte g &#x3D; 256; 这些变量有些是错误的，错在哪里?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-string%E5%92%8CStringBuilder%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">
+          3.string和StringBuilder的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E4%BB%80%E4%B9%88%E6%98%AF%E6%89%A9%E5%B1%95%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">
+          4.什么是扩展方法？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-byte-a-255-a-5-a%E7%9A%84%E5%80%BC%E6%98%AF%E5%A4%9A%E5%B0%91%EF%BC%9F"><span class="toc-number">5.</span> <span class="toc-text">
+          5.byte a &#x3D;255;a+&#x3D;5;a的值是多少？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E4%BB%80%E4%B9%88%E6%98%AF%E8%A3%85%E7%AE%B1%E5%92%8C%E6%8B%86%E7%AE%B1%EF%BC%9F"><span class="toc-number">6.</span> <span class="toc-text">
+          6.什么是装箱和拆箱？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E5%80%BC%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">7.</span> <span class="toc-text">
+          7.值类型和引用类型的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-new%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">8.</span> <span class="toc-text">
+          8.new关键字的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-int-%E5%92%8Cint%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">9.</span> <span class="toc-text">
+          9. int?和int有什么区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-C-%E4%B8%AD%E7%9A%84%E5%A7%94%E6%89%98%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">10.</span> <span class="toc-text">
+          10. C#中的委托是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-%E7%94%A8%E6%9C%80%E6%9C%89%E6%95%88%E7%9A%84%E6%96%B9%E6%B3%95%E7%AE%97%E5%87%BA2%E4%B9%98%E4%BB%A58%E7%AD%89%E4%BA%8E%E5%87%A0%EF%BC%9F"><span class="toc-number">11.</span> <span class="toc-text">
+          11.用最有效的方法算出2乘以8等于几？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-const%E5%92%8Creadonly%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">12.</span> <span class="toc-text">
+          12.const和readonly有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-%E5%86%99%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E5%88%A4%E6%96%AD%E6%95%B4%E6%95%B0number%E6%98%AF%E5%90%A6%E6%98%AF2%E7%9A%84N%E6%AC%A1%E6%96%B9"><span class="toc-number">13.</span> <span class="toc-text">
+          13.写一个方法判断整数number是否是2的N次方</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-CTS%E3%80%81CLS%E3%80%81CLR%E5%88%86%E5%88%AB%E4%BD%9C%E4%BD%95%E8%A7%A3%E9%87%8A"><span class="toc-number">14.</span> <span class="toc-text">
+          14.CTS、CLS、CLR分别作何解释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E5%88%86%E6%9E%90%E4%B8%8B%E9%9D%A2%E4%BB%A3%E7%A0%81%EF%BC%8Ca%E3%80%81b%E7%9A%84%E5%80%BC%E6%98%AF%E5%A4%9A%E5%B0%91%EF%BC%9F"><span class="toc-number">15.</span> <span class="toc-text">
+          15.分析下面代码，a、b的值是多少？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-Strings-new-String-%E2%80%9Cxyz%E2%80%9D-%E5%88%9B%E5%BB%BA%E4%BA%86%E5%87%A0%E4%B8%AAString-Object"><span class="toc-number">16.</span> <span class="toc-text">
+          16.Strings &#x3D; new String(“xyz”);创建了几个String Object?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81%E6%88%90%E5%91%98%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">17.</span> <span class="toc-text">
+          17.静态成员和非静态成员的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-c-%E5%8F%AF%E5%90%A6%E5%AF%B9%E5%86%85%E5%AD%98%E7%9B%B4%E6%8E%A5%E6%93%8D%E4%BD%9C"><span class="toc-number">18.</span> <span class="toc-text">
+          18.c#可否对内存直接操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19-short-s1-1-s1-s1-1-%E6%9C%89%E4%BB%80%E4%B9%88%E9%94%99-short-s1-1-s1-1-%E6%9C%89%E4%BB%80%E4%B9%88%E9%94%99"><span class="toc-number">19.</span> <span class="toc-text">
+          19.short s1 &#x3D; 1; s1 &#x3D; s1 + 1;有什么错? short s1 &#x3D; 1; s1 +&#x3D; 1;有什么错?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20-%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%BA%E7%B1%BB%E5%9E%8B%EF%BC%8C%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%B1%E7%B1%BB%E5%9E%8B%EF%BC%9F%E5%93%AA%E7%A7%8D%E6%9B%B4%E5%A5%BD%E4%BA%9B%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88"><span class="toc-number">20.</span> <span class="toc-text">
+          20.什么是强类型，什么是弱类型？哪种更好些？为什么?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-using%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">21.</span> <span class="toc-text">
+          21.using关键字的作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-ref%E5%92%8Cout%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">22.</span> <span class="toc-text">
+          22.ref和out有什么区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23-a-Equals-b-%E5%92%8Ca-b%E4%B8%80%E6%A0%B7%E5%90%97%EF%BC%9F"><span class="toc-number">23.</span> <span class="toc-text">
+          23.a.Equals(b)和a&#x3D;&#x3D;b一样吗？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#24-Math-Round-11-5-%E7%AD%89%E6%96%BC%E5%A4%9A%E5%B0%91-Math-Round-11-5-%E7%AD%89%E6%96%BC%E5%A4%9A%E5%B0%91"><span class="toc-number">24.</span> <span class="toc-text">
+          24.Math.Round(11.5)等於多少? Math.Round(-11.5)等於多少?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25-amp-%E5%92%8C-amp-amp-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">25.</span> <span class="toc-text">
+          25.&amp;和&amp;&amp;的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26-i-%E5%92%8C-i%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">26.</span> <span class="toc-text">
+          26.i++和++i有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-as%E5%92%8Cis%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">27.</span> <span class="toc-text">
+          27.as和is的区别</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/cyberpunk.svg" alt="avatar"></div></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/Simpler-W" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="undefined"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">Categories</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Simpler W</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+  var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload"],"history":true,"scrollTo":false,"scrollRestoration":false,"cacheBust":false,"debug":false,"currentUrlFullReload":false,"timeout":0});
+  // 加载进度条的计时器
+  var loadingTimer = null;
+
+  // 重置页面 Y 方向上的滚动偏移量
+  document.addEventListener('pjax:send', function () {
+    $('.header-nav-menu').removeClass('show');
+    if (CONFIG.pjax && CONFIG.pjax.avoidBanner) {
+      $('html').velocity('scroll', {
+        duration: 500,
+        offset: $('#header').height(),
+        easing: 'easeInOutCubic'
+      });
+    }
+
+    var loadingBarWidth = 20;
+    var MAX_LOADING_WIDTH = 95;
+
+    $('.loading-bar').addClass('loading');
+    $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    clearInterval(loadingTimer);
+    loadingTimer = setInterval(function () {
+      loadingBarWidth += 3;
+      if (loadingBarWidth > MAX_LOADING_WIDTH) {
+        loadingBarWidth = MAX_LOADING_WIDTH;
+      }
+      $('.loading-bar__progress').css('width', loadingBarWidth + '%');
+    }, 500);
+  }, false);
+
+  window.addEventListener('pjax:complete', function () {
+    clearInterval(loadingTimer);
+    $('.loading-bar__progress').css('width', '100%');
+    $('.loading-bar').removeClass('loading');
+    setTimeout(function () {
+      $('.loading-bar__progress').css('width', '0');
+    }, 400);
+    $('link[rel=prefetch], script[data-pjax-rm]').each(function () {
+      $(this).remove();
+    });
+    $('script[data-pjax], #pjax-reload script').each(function () {
+      $(this).parent().append($(this).remove());
+    });
+
+    if (Stun.utils.pjaxReloadBoot) {
+      Stun.utils.pjaxReloadBoot();
+    }
+    if (Stun.utils.pjaxReloadScroll) {
+      Stun.utils.pjaxReloadScroll();
+    }
+    if (Stun.utils.pjaxReloadSidebar) {
+      Stun.utils.pjaxReloadSidebar();
+    }
+    if (false) {
+      if (Stun.utils.pjaxReloadHeader) {
+        Stun.utils.pjaxReloadHeader();
+      }
+      if (Stun.utils.pjaxReloadScrollIcon) {
+        Stun.utils.pjaxReloadScrollIcon();
+      }
+      if (Stun.utils.pjaxReloadLocalSearch) {
+        Stun.utils.pjaxReloadLocalSearch();
+      }
+    }
+  }, false);
+}, false);</script><div id="pjax-reload"></div><script src="/js/utils.js?v=2.6.1"></script><script src="/js/stun-boot.js?v=2.6.1"></script><script src="/js/scroll.js?v=2.6.1"></script><script src="/js/header.js?v=2.6.1"></script><script src="/js/sidebar.js?v=2.6.1"></script></body></html>
