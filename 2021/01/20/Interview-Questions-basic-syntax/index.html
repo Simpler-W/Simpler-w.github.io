@@ -1,14 +1,14 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.1" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.1" type="image/png" sizes="32x32"><meta name="description" content="1. 字符串中string str &#x3D; null和string str &#x3D; “”和string str &#x3D; string.Empty的区别       string.Empty相当于””,string.Empty是一个静态只读的字段。string str&#x3D;””,初始化对象，并分配一个空字符串的内存空间,string str&#x3D;null,初始化对象，不会分配内存">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Simpler Learning">
+<meta property="og:title" content="C sharp syntax">
 <meta property="og:url" content="https://github.com/Simpler-W/2021/01/20/Interview-Questions-basic-syntax/index.html">
 <meta property="og:site_name" content="Simpler Learning">
 <meta property="og:description" content="1. 字符串中string str &#x3D; null和string str &#x3D; “”和string str &#x3D; string.Empty的区别       string.Empty相当于””,string.Empty是一个静态只读的字段。string str&#x3D;””,初始化对象，并分配一个空字符串的内存空间,string str&#x3D;null,初始化对象，不会分配内存">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-20T08:58:47.879Z">
-<meta property="article:modified_time" content="2021-01-20T05:33:45.420Z">
+<meta property="article:published_time" content="2021-01-20T07:53:20.000Z">
+<meta property="article:modified_time" content="2021-01-21T00:56:00.997Z">
 <meta property="article:author" content="Simpler W">
-<meta name="twitter:card" content="summary"><title>[ Untitled ] | Simpler Learning</title><link ref="canonical" href="https://github.com/Simpler-W/2021/01/20/Interview-Questions-basic-syntax/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
+<meta name="twitter:card" content="summary"><title>C sharp syntax | Simpler Learning</title><link ref="canonical" href="https://github.com/Simpler-W/2021/01/20/Interview-Questions-basic-syntax/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.1"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
@@ -32,7 +32,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">Categories</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Simpler Learning</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">[ Untitled ]</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-20</span></span></div></header><div class="post-body">
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">Categories</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Simpler Learning</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">C sharp syntax</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-01-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-01-21</span></span></div></header><div class="post-body">
         <h4 id="1-字符串中string-str-null和string-str-“”和string-str-string-Empty的区别"   >
           <a href="#1-字符串中string-str-null和string-str-“”和string-str-string-Empty的区别" class="heading-link"><i class="fas fa-link"></i></a>1. 字符串中string str = null和string str = “”和string str = string.Empty的区别</h4>
       <p>string.Empty相当于””,string.Empty是一个静态只读的字段。<br>string str=””,初始化对象，并分配一个空字符串的内存空间,string str=null,初始化对象，不会分配内存空间</p>
@@ -213,7 +213,83 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
         <h4 id="27-as和is的区别"   >
           <a href="#27-as和is的区别" class="heading-link"><i class="fas fa-link"></i></a>27.as和is的区别</h4>
       <p>as会执行类型转换，并在转换的同时判断兼容性，如果无法进行转换，返回位null<br>is只是做类型兼容性判断，并不执行真正的类型转换，返回true或false，对象为null也会返回false。</p>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2021/01/17/English-2/"><span class="paginator-prev__text">English Words</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%ADstring-str-null%E5%92%8Cstring-str-%E2%80%9C%E2%80%9D%E5%92%8Cstring-str-string-Empty%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">
+
+        <h4 id="28-访问修饰符"   >
+          <a href="#28-访问修饰符" class="heading-link"><i class="fas fa-link"></i></a>28.访问修饰符</h4>
+      <p>声明时指定类型或成员的可访问性</p>
+<ul>
+<li>public：同一程序集中的任何其他代码或引用该程序集的其他程序集都可以访问该类型或成员。</li>
+<li>private：只有同一 class 或 struct 中的代码可以访问该类型或成员。</li>
+<li>protected：只有同一 class 或者从该 class 派生的 class 中的代码可以访问该类型或成员。</li>
+<li>internal：同一程序集中的任何代码都可以访问该类型或成员，但其他程序集中的代码不可以。</li>
+<li>protected internal：该类型或成员可由对其进行声明的程序集或另一程序集中的派生 class 中的任何代码访问。</li>
+<li>private protected：只有在其声明程序集内，通过相同 class 中的代码或派生自该 class 的类型，才能访问类型或成员。</li>
+</ul>
+
+        <h4 id="29-override与重载的区别"   >
+          <a href="#29-override与重载的区别" class="heading-link"><i class="fas fa-link"></i></a>29.override与重载的区别</h4>
+      <p>重载是方法的名称相同。参数或参数类型不同<br>Override是对基类中实现的函数进行重写</p>
+
+        <h4 id="30-在一个B-S结构的系统中传递变量值的方法"   >
+          <a href="#30-在一个B-S结构的系统中传递变量值的方法" class="heading-link"><i class="fas fa-link"></i></a>30.在一个B/S结构的系统中传递变量值的方法</h4>
+      <p>QueryString, session, cookie, application, this.Server.Transfer</p>
+
+        <h4 id="31-描述一下C-中索引器的实现过程，是否只能根据数字进行索引？"   >
+          <a href="#31-描述一下C-中索引器的实现过程，是否只能根据数字进行索引？" class="heading-link"><i class="fas fa-link"></i></a>31.描述一下C#中索引器的实现过程，是否只能根据数字进行索引？</h4>
+      <p>索引器允许类或结构的实例就像数组一样进行索引。<br>索引器可以有多个形参，例如当访问二维数组时。<br>可以用任意类型。</p>
+
+        <h4 id="32-什么是受管制的代码？"   >
+          <a href="#32-什么是受管制的代码？" class="heading-link"><i class="fas fa-link"></i></a>32.什么是受管制的代码？</h4>
+      <p>unsafe：非托管代码。不经过CLR运行。</p>
+
+        <h4 id="33-什么是Code-Behind技术？"   >
+          <a href="#33-什么是Code-Behind技术？" class="heading-link"><i class="fas fa-link"></i></a>33.什么是Code-Behind技术？</h4>
+      <p>代码后植。例如winform、wpf，表示UI逻辑的与其UI元素分开</p>
+
+        <h4 id="34-常用的调用WebService的方法有哪些？"   >
+          <a href="#34-常用的调用WebService的方法有哪些？" class="heading-link"><i class="fas fa-link"></i></a>34.常用的调用WebService的方法有哪些？</h4>
+      <p>使用WSDL.exe命令行工具。<br>使用VS.NET中的Add Web Reference菜单选项</p>
+
+        <h4 id="35-netRemoting-的工作原理是什么？"   >
+          <a href="#35-netRemoting-的工作原理是什么？" class="heading-link"><i class="fas fa-link"></i></a>35..netRemoting 的工作原理是什么？</h4>
+      <p>服务器端向客户端发送一个进程编号，一个程序域编号，以确定对象的位置。</p>
+
+        <h4 id="36-微软-NET构架下remoting和webservice两项技术的理解以及实际中的应用"   >
+          <a href="#36-微软-NET构架下remoting和webservice两项技术的理解以及实际中的应用" class="heading-link"><i class="fas fa-link"></i></a>36.微软.NET构架下remoting和webservice两项技术的理解以及实际中的应用</h4>
+      <p>WS主要是可利用HTTP，穿透防火墙<br>Remoting可以利用TCP/IP，二进制传送提高效率</p>
+
+        <h4 id="37-启动一个线程可以使用哪几种方式或那几个类"   >
+          <a href="#37-启动一个线程可以使用哪几种方式或那几个类" class="heading-link"><i class="fas fa-link"></i></a>37.启动一个线程可以使用哪几种方式或那几个类?</h4>
+      <p>异步委托async delegate开启线程<br>通过Thread类开启线程<br>通过线程池开启线程<br>通过任务Task开启线程</p>
+
+        <h4 id="38-sleep-和-wait-有什么区别"   >
+          <a href="#38-sleep-和-wait-有什么区别" class="heading-link"><i class="fas fa-link"></i></a>38.sleep()和 wait() 有什么区别?</h4>
+      <p>sleep()方法是使线程停止一段时间的方法。在sleep 时间间隔期满后，线程不一定立即恢复执行<br>wait()方法是线程会暂停执行，被调对象进入等待状态，直到被唤醒或等待时间到。</p>
+
+        <h4 id="39-swtich是否能作用在byte上，是否能作用在long上，是否能作用在String上"   >
+          <a href="#39-swtich是否能作用在byte上，是否能作用在long上，是否能作用在String上" class="heading-link"><i class="fas fa-link"></i></a>39.swtich是否能作用在byte上，是否能作用在long上，是否能作用在String上?</h4>
+      <p>都可以</p>
+
+        <h4 id="40-进程和线程的区别？"   >
+          <a href="#40-进程和线程的区别？" class="heading-link"><i class="fas fa-link"></i></a>40.进程和线程的区别？</h4>
+      <p>进程是系统进行资源分配和调度的单位<br>线程是CPU调度和分派的单位，一个进程可以有多个线程，这些线程共享这个进程的资源。</p>
+
+        <h4 id="41-堆和栈的区别？"   >
+          <a href="#41-堆和栈的区别？" class="heading-link"><i class="fas fa-link"></i></a>41.堆和栈的区别？</h4>
+      <p>a、存储<br>    栈：变量、对象的引用<br>    堆：实例对象<br>b、速度<br>    栈：存取速度快<br>    堆：存取速度慢<br>c、线程访问<br>    栈：每个线程都有一个栈区<br>    堆：所有线程共享一个堆区<br>d、垃圾回收方面<br>    栈：比较频繁，值类型的值存储在里面，由操作系统自动分配释放。<br>    堆：不频繁，引用类型的值呈链式形式存储在里面，由程序员分配释放，如果不释放，程序结束时自动释放。</p>
+
+        <h4 id="42-什么是反射？"   >
+          <a href="#42-什么是反射？" class="heading-link"><i class="fas fa-link"></i></a>42.什么是反射？</h4>
+      <p>动态获取程序集信息，可以不修改调用方，进修改被调用的程序集中的方法内容</p>
+
+        <h4 id="43-什么是虚函数？什么是抽象函数？"   >
+          <a href="#43-什么是虚函数？什么是抽象函数？" class="heading-link"><i class="fas fa-link"></i></a>43.什么是虚函数？什么是抽象函数？</h4>
+      <p>虚函数（virtual）：子类可继承重写或不重写的函数。<br>抽象函数（abstract）：没有实现，必须公开，没有方法体，规定其非虚子类必须实现的函数，必须被重写。</p>
+
+        <h4 id="44-能用foreach遍历访问的对象需要实现什么接口，或声明什么方法的类型。"   >
+          <a href="#44-能用foreach遍历访问的对象需要实现什么接口，或声明什么方法的类型。" class="heading-link"><i class="fas fa-link"></i></a>44.能用foreach遍历访问的对象需要实现什么接口，或声明什么方法的类型。</h4>
+      <p>IEnumerable 接口、 GetEnumerator 方法</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/2021/01/21/Interview-Questions-basic-sql/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">SQL syntax</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/2021/01/17/English-2/"><span class="paginator-prev__text">English Words</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%ADstring-str-null%E5%92%8Cstring-str-%E2%80%9C%E2%80%9D%E5%92%8Cstring-str-string-Empty%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">
           1. 字符串中string str &#x3D; null和string str &#x3D; “”和string str &#x3D; string.Empty的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-byte-b-%E2%80%98a%E2%80%99-byte-c-1-byte-d-%E2%80%98ab%E2%80%99-byte-e-%E2%80%98%E5%95%8A%E2%80%99-byte-g-256-%E8%BF%99%E4%BA%9B%E5%8F%98%E9%87%8F%E6%9C%89%E4%BA%9B%E6%98%AF%E9%94%99%E8%AF%AF%E7%9A%84%EF%BC%8C%E9%94%99%E5%9C%A8%E5%93%AA%E9%87%8C"><span class="toc-number">2.</span> <span class="toc-text">
           2. byte b &#x3D; ‘a’; byte c &#x3D; 1; byte d &#x3D; ‘ab’; byte e &#x3D; ‘啊’; byte g &#x3D; 256; 这些变量有些是错误的，错在哪里?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-string%E5%92%8CStringBuilder%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">
           3.string和StringBuilder的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E4%BB%80%E4%B9%88%E6%98%AF%E6%89%A9%E5%B1%95%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">
@@ -240,7 +316,24 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.3.0"></he
           24.Math.Round(11.5)等於多少? Math.Round(-11.5)等於多少?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25-amp-%E5%92%8C-amp-amp-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">25.</span> <span class="toc-text">
           25.&amp;和&amp;&amp;的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26-i-%E5%92%8C-i%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">26.</span> <span class="toc-text">
           26.i++和++i有什么区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-as%E5%92%8Cis%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">27.</span> <span class="toc-text">
-          27.as和is的区别</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/cyberpunk.svg" alt="avatar"></div></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/Simpler-W" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="undefined"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">Categories</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Simpler W</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
+          27.as和is的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#28-%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-number">28.</span> <span class="toc-text">
+          28.访问修饰符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#29-override%E4%B8%8E%E9%87%8D%E8%BD%BD%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">29.</span> <span class="toc-text">
+          29.override与重载的区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30-%E5%9C%A8%E4%B8%80%E4%B8%AAB-S%E7%BB%93%E6%9E%84%E7%9A%84%E7%B3%BB%E7%BB%9F%E4%B8%AD%E4%BC%A0%E9%80%92%E5%8F%98%E9%87%8F%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">30.</span> <span class="toc-text">
+          30.在一个B&#x2F;S结构的系统中传递变量值的方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#31-%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8BC-%E4%B8%AD%E7%B4%A2%E5%BC%95%E5%99%A8%E7%9A%84%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B%EF%BC%8C%E6%98%AF%E5%90%A6%E5%8F%AA%E8%83%BD%E6%A0%B9%E6%8D%AE%E6%95%B0%E5%AD%97%E8%BF%9B%E8%A1%8C%E7%B4%A2%E5%BC%95%EF%BC%9F"><span class="toc-number">31.</span> <span class="toc-text">
+          31.描述一下C#中索引器的实现过程，是否只能根据数字进行索引？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#32-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%97%E7%AE%A1%E5%88%B6%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%9F"><span class="toc-number">32.</span> <span class="toc-text">
+          32.什么是受管制的代码？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33-%E4%BB%80%E4%B9%88%E6%98%AFCode-Behind%E6%8A%80%E6%9C%AF%EF%BC%9F"><span class="toc-number">33.</span> <span class="toc-text">
+          33.什么是Code-Behind技术？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34-%E5%B8%B8%E7%94%A8%E7%9A%84%E8%B0%83%E7%94%A8WebService%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">34.</span> <span class="toc-text">
+          34.常用的调用WebService的方法有哪些？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#35-netRemoting-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">35.</span> <span class="toc-text">
+          35..netRemoting 的工作原理是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36-%E5%BE%AE%E8%BD%AF-NET%E6%9E%84%E6%9E%B6%E4%B8%8Bremoting%E5%92%8Cwebservice%E4%B8%A4%E9%A1%B9%E6%8A%80%E6%9C%AF%E7%9A%84%E7%90%86%E8%A7%A3%E4%BB%A5%E5%8F%8A%E5%AE%9E%E9%99%85%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">36.</span> <span class="toc-text">
+          36.微软.NET构架下remoting和webservice两项技术的理解以及实际中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#37-%E5%90%AF%E5%8A%A8%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%93%AA%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%88%96%E9%82%A3%E5%87%A0%E4%B8%AA%E7%B1%BB"><span class="toc-number">37.</span> <span class="toc-text">
+          37.启动一个线程可以使用哪几种方式或那几个类?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#38-sleep-%E5%92%8C-wait-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">38.</span> <span class="toc-text">
+          38.sleep()和 wait() 有什么区别?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#39-swtich%E6%98%AF%E5%90%A6%E8%83%BD%E4%BD%9C%E7%94%A8%E5%9C%A8byte%E4%B8%8A%EF%BC%8C%E6%98%AF%E5%90%A6%E8%83%BD%E4%BD%9C%E7%94%A8%E5%9C%A8long%E4%B8%8A%EF%BC%8C%E6%98%AF%E5%90%A6%E8%83%BD%E4%BD%9C%E7%94%A8%E5%9C%A8String%E4%B8%8A"><span class="toc-number">39.</span> <span class="toc-text">
+          39.swtich是否能作用在byte上，是否能作用在long上，是否能作用在String上?</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#40-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">40.</span> <span class="toc-text">
+          40.进程和线程的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#41-%E5%A0%86%E5%92%8C%E6%A0%88%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">41.</span> <span class="toc-text">
+          41.堆和栈的区别？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#42-%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%8D%E5%B0%84%EF%BC%9F"><span class="toc-number">42.</span> <span class="toc-text">
+          42.什么是反射？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#43-%E4%BB%80%E4%B9%88%E6%98%AF%E8%99%9A%E5%87%BD%E6%95%B0%EF%BC%9F%E4%BB%80%E4%B9%88%E6%98%AF%E6%8A%BD%E8%B1%A1%E5%87%BD%E6%95%B0%EF%BC%9F"><span class="toc-number">43.</span> <span class="toc-text">
+          43.什么是虚函数？什么是抽象函数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#44-%E8%83%BD%E7%94%A8foreach%E9%81%8D%E5%8E%86%E8%AE%BF%E9%97%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E9%9C%80%E8%A6%81%E5%AE%9E%E7%8E%B0%E4%BB%80%E4%B9%88%E6%8E%A5%E5%8F%A3%EF%BC%8C%E6%88%96%E5%A3%B0%E6%98%8E%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E7%9A%84%E7%B1%BB%E5%9E%8B%E3%80%82"><span class="toc-number">44.</span> <span class="toc-text">
+          44.能用foreach遍历访问的对象需要实现什么接口，或声明什么方法的类型。</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/cyberpunk.svg" alt="avatar"></div></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/Simpler-W" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="undefined"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">Categories</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Simpler W</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.1</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js"></script><script>window.addEventListener('DOMContentLoaded', function () {
   var pjax = new Pjax({"selectors":["head title","#main",".pjax-reload"],"history":true,"scrollTo":false,"scrollRestoration":false,"cacheBust":false,"debug":false,"currentUrlFullReload":false,"timeout":0});
   // 加载进度条的计时器
   var loadingTimer = null;
